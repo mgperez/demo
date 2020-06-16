@@ -4,6 +4,15 @@ target/
 !**/src/main/**
 !**/src/test/**
 
+# virtual machine crash logs
+hs_err_pid*
+
+# Build output directies
+/target
+*/target
+/build
+*/build
+
 ### STS ###
 .apt_generated
 .classpath
@@ -12,12 +21,16 @@ target/
 .settings
 .springBeans
 .sts4-cache
+.metadata
+bin
 
 ### IntelliJ IDEA ###
+out
 .idea
+*.ipr
 *.iws
 *.iml
-*.ipr
+atlassian-ide-plugin.xml
 
 ### NetBeans ###
 /nbproject/private/
@@ -26,6 +39,11 @@ target/
 /nbdist/
 /.nb-gradle/
 build/
+.nbattrs
 
 ### VS Code ###
 .vscode/
+
+# Miscellaneous
+*.log
+.clover
